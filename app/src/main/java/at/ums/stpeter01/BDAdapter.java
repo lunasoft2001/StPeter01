@@ -22,6 +22,7 @@ public class BDAdapter {
      * Definimos constantes con el nombre de las columnas de la tabla
      */
     public static final String mTumbasID = ColumnasTumbas.ID;
+    public static final String mTumbasCodigo = ColumnasTumbas.COD_TUMBA;
     public static final String mTumbasNombre = ColumnasTumbas.NOMBRE;
     public static final String mTumbasCementerio = ColumnasTumbas.CEMENTERIO;
     public static final String mTumbasCampo = ColumnasTumbas.CAMPO;
@@ -38,7 +39,7 @@ public class BDAdapter {
      */
 
     private String[] columnasTumbas = new String[]{mTumbasID, mTumbasNombre, mTumbasCementerio,
-                                mTumbasCampo, mTumbasFila, mTumbasNumero};
+                                mTumbasCodigo, mTumbasFila, mTumbasNumero};
 
     public BDAdapter(Context context){
         this.contexto = context;
@@ -68,7 +69,7 @@ public class BDAdapter {
      */
     public Cursor getRegistroTumbas(long id) throws SQLException{
 
-        String condicion = mTumbasID + "=" + Long.toString(id);
+        String condicion = mTumbasID + "=" + id;
 
         Cursor c = db.query(true,mTUMBAS,columnasTumbas,condicion,null,null,null,null,null);
 

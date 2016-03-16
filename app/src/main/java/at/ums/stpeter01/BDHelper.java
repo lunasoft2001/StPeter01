@@ -30,7 +30,8 @@ public class BDHelper extends SQLiteOpenHelper {
 
         db.execSQL("CREATE TABLE "  + Tablas.TUMBAS +
                 "( " +
-                "_id " +" TEXT PRIMARY KEY," +
+                ColumnasTumbas.ID +" INT PRIMARY KEY," +
+                ColumnasTumbas.COD_TUMBA + " TEXT NOT NULL," +
                 ColumnasTumbas.NOMBRE + " TEXT NOT NULL," +
                 ColumnasTumbas.CEMENTERIO +" TEXT," +
                 ColumnasTumbas.CAMPO + " TEXT," +
@@ -46,7 +47,8 @@ public class BDHelper extends SQLiteOpenHelper {
          */
         //Tumba 1
         ContentValues valoresTumba = new ContentValues();
-        valoresTumba.put(ColumnasTumbas.ID, "P 01-01-01");
+        valoresTumba.put(ColumnasTumbas.ID, 1);
+        valoresTumba.put(ColumnasTumbas.COD_TUMBA, "P 01-01-01");
         valoresTumba.put(ColumnasTumbas.NOMBRE, "pepito 1");
         valoresTumba.put(ColumnasTumbas.CEMENTERIO, "St. Peter");
         valoresTumba.put(ColumnasTumbas.CAMPO, "01");
@@ -55,7 +57,8 @@ public class BDHelper extends SQLiteOpenHelper {
         db.insertOrThrow(Tablas.TUMBAS, null, valoresTumba);
 
         //Tumba 2
-        valoresTumba.put(ColumnasTumbas.ID, "P 01-01-02");
+        valoresTumba.put(ColumnasTumbas.ID, 2);
+        valoresTumba.put(ColumnasTumbas.COD_TUMBA, "P 01-01-02");
         valoresTumba.put(ColumnasTumbas.NOMBRE, "pepito 2");
         valoresTumba.put(ColumnasTumbas.CEMENTERIO, "St. Peter");
         valoresTumba.put(ColumnasTumbas.CAMPO, "01");
@@ -64,7 +67,8 @@ public class BDHelper extends SQLiteOpenHelper {
         db.insertOrThrow(Tablas.TUMBAS, null, valoresTumba);
 
         //Tumba 3
-        valoresTumba.put(ColumnasTumbas.ID, "P 01-02-01");
+        valoresTumba.put(ColumnasTumbas.ID, 3);
+        valoresTumba.put(ColumnasTumbas.COD_TUMBA, "P 01-02-01");
         valoresTumba.put(ColumnasTumbas.NOMBRE, "pepito 3");
         valoresTumba.put(ColumnasTumbas.CEMENTERIO, "St. Peter");
         valoresTumba.put(ColumnasTumbas.CAMPO, "01");
@@ -73,7 +77,8 @@ public class BDHelper extends SQLiteOpenHelper {
         db.insertOrThrow(Tablas.TUMBAS, null, valoresTumba);
 
         //Tumba 4
-        valoresTumba.put(ColumnasTumbas.ID, "P 02-01-01");
+        valoresTumba.put(ColumnasTumbas.ID, 4);
+        valoresTumba.put(ColumnasTumbas.COD_TUMBA, "P 02-01-01");
         valoresTumba.put(ColumnasTumbas.NOMBRE, "pepito 41");
         valoresTumba.put(ColumnasTumbas.CEMENTERIO, "St. Peter");
         valoresTumba.put(ColumnasTumbas.CAMPO, "02");

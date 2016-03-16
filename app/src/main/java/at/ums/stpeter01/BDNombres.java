@@ -18,6 +18,7 @@ public class BDNombres {
 
     interface ColumnasTumbas{
         String ID = "_id";
+        String COD_TUMBA = "tum_IdGrab";
         String NOMBRE = "tum_nombre";
         String CEMENTERIO = "tum_cementerio";
         String CAMPO = "tum_campo";
