@@ -1,4 +1,4 @@
-package at.ums.stpeter01;
+package at.ums.stpeter01.actividades;
 
 import android.app.ListActivity;
 import android.content.Intent;
@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.ListView;
 
 import java.sql.SQLException;
+
+import at.ums.stpeter01.R;
+import at.ums.stpeter01.sqlite.BDAdapter;
 
 public class ListaTumbas extends ListActivity {
 
@@ -50,7 +53,7 @@ public class ListaTumbas extends ListActivity {
         lista.setAdapter(tumbasAdapter);
     }
 
-    private void visualizar(long id){ //ojo con este valor puede ser string
+    private void visualizar(long id){
         // Llamamos a la Actividad TumbasFormulario indicando el modo visualización y el identificador del registro
         Intent i = new Intent(ListaTumbas.this, TumbasFormulario.class);
         i.putExtra(C_MODO,C_VISUALIZAR);

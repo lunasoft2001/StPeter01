@@ -1,12 +1,10 @@
-package at.ums.stpeter01;
+package at.ums.stpeter01.sqlite;
 
 import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import java.sql.SQLException;
-
-import at.ums.stpeter01.BDNombres.*;
 
 /**
  * Created by luna-aleixos on 15.03.2016.
@@ -16,18 +14,18 @@ public class BDAdapter {
     /**
      * Definimos constante con el nombre de la tabla
      */
-    public static final String mTUMBAS = Tablas.TUMBAS;
+    public static final String mTUMBAS = BDNombres.Tablas.TUMBAS;
 
     /**
      * Definimos constantes con el nombre de las columnas de la tabla
      */
-    public static final String mTumbasID = ColumnasTumbas.ID;
-    public static final String mTumbasCodigo = ColumnasTumbas.COD_TUMBA;
-    public static final String mTumbasNombre = ColumnasTumbas.NOMBRE;
-    public static final String mTumbasCementerio = ColumnasTumbas.CEMENTERIO;
-    public static final String mTumbasCampo = ColumnasTumbas.CAMPO;
-    public static final String mTumbasFila = ColumnasTumbas.FILA;
-    public static final String mTumbasNumero = ColumnasTumbas.NUMERO;
+    public static final String mTumbasID = BDNombres.ColumnasTumbas.ID;
+    public static final String mTumbasCodigo = BDNombres.ColumnasTumbas.COD_TUMBA;
+    public static final String mTumbasNombre = BDNombres.ColumnasTumbas.NOMBRE;
+    public static final String mTumbasCementerio = BDNombres.ColumnasTumbas.CEMENTERIO;
+    public static final String mTumbasCampo = BDNombres.ColumnasTumbas.CAMPO;
+    public static final String mTumbasFila = BDNombres.ColumnasTumbas.FILA;
+    public static final String mTumbasNumero = BDNombres.ColumnasTumbas.NUMERO;
 
 
     private Context contexto;
@@ -39,7 +37,7 @@ public class BDAdapter {
      */
 
     private String[] columnasTumbas = new String[]{mTumbasID, mTumbasNombre, mTumbasCementerio,
-                                mTumbasCodigo, mTumbasFila, mTumbasNumero};
+                               mTumbasCampo, mTumbasCodigo, mTumbasFila, mTumbasNumero};
 
     public BDAdapter(Context context){
         this.contexto = context;

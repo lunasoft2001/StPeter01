@@ -1,4 +1,4 @@
-package at.ums.stpeter01;
+package at.ums.stpeter01.actividades;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -9,6 +9,8 @@ import android.widget.CursorAdapter;
 import android.widget.TextView;
 
 import java.sql.SQLException;
+
+import at.ums.stpeter01.sqlite.BDAdapter;
 
 /**
  * Created by luna-aleixos on 15.03.2016.

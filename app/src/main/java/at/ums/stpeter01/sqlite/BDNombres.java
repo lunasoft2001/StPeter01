@@ -1,4 +1,4 @@
-package at.ums.stpeter01;
+package at.ums.stpeter01.sqlite;
 
 /**
  * Created by luna-aleixos on 15.03.2016.

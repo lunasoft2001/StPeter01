@@ -1,13 +1,15 @@
-package at.ums.stpeter01;
+package at.ums.stpeter01.actividades;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.database.Cursor;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
 
 import java.sql.SQLException;
+
+import at.ums.stpeter01.R;
+import at.ums.stpeter01.sqlite.BDAdapter;
 
 public class TumbasFormulario extends Activity {
 

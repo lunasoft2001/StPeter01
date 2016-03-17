@@ -16,6 +16,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import at.ums.stpeter01.actividades.ListaTumbas;
+import at.ums.stpeter01.sqlite.BDHelper;
+
 public class ActividadPrincipal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
