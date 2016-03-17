@@ -10,6 +10,7 @@ public class BDNombres {
      */
     interface Tablas{
         String TUMBAS = "tumbas";
+        String TRABAJO_CABECERA = "trabajo_cabecera";
     }
 
     /**
@@ -24,5 +25,13 @@ public class BDNombres {
         String CAMPO = "tum_campo";
         String FILA = "tum_fila";
         String NUMERO = "tum_numero";
+    }
+
+    interface ColumnasTrabajoCabecera{
+        String ID = "_id";
+        String DESCRIPCION_TRABAJO = "tr_cab_descripcion";
+        String FECHA = "tr_cab_fecha";
+        String COD_TRABAJO = "tr_cab_IdTrabajo";
+        String TUMBA = "tr_cab_tumba";
     }
 }

@@ -8,7 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".actividades.TumbasFormulario">
+    tools:context=".actividades.tumbas.TumbasFormulario">
 
     <RelativeLayout
         android:layout_width="wrap_content"
@@ -16,43 +16,43 @@
         android:padding="16dp">
 
         <TextView
-            android:id="@+id/tvIdTumba"
+            android:id="@+id/tvIdTrabajoCabecera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Id Tumba"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+id/etIdTumba"
+            android:id="@+id/etIdTrabajoCabecera"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/tvIdTumba"
+            android:layout_below="@+id/tvIdTrabajoCabecera"
             android:ems="10" />
 
         <TextView
-            android:id="@+id/tvNombreTumba"
+            android:id="@+id/tvDescripcionTrabajoCabecera"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/etIdTumba"
+            android:layout_below="@+id/etIdTrabajoCabecera"
             android:text="Nombre"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+id/etNombreTumba"
+            android:id="@+id/etDescripcionTrabajoCabecera"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/tvNombreTumba"
+            android:layout_below="@+id/tvDescripcionTrabajoCabecera"
             android:ems="10" />
 
         <TextView
-            android:id="@+id/tvCementerio"
+            android:id="@+id/tvFecha"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/etNombreTumba"
+            android:layout_below="@+id/etDescripcionTrabajoCabecera"
             android:text="Cementerio"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -61,7 +61,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:layout_below="@+id/tvCementerio"
+            android:layout_below="@+id/tvFecha"
             android:ems="10" />
 
         <LinearLayout

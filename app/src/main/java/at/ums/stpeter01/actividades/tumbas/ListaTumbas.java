@@ -1,4 +1,4 @@
-package at.ums.stpeter01.actividades;
+package at.ums.stpeter01.actividades.tumbas;
 
 import android.app.ListActivity;
 import android.content.Intent;

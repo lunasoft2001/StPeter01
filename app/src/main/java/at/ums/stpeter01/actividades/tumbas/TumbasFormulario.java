@@ -1,4 +1,4 @@
-package at.ums.stpeter01.actividades;
+package at.ums.stpeter01.actividades.tumbas;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -49,8 +49,8 @@ public class TumbasFormulario extends Activity {
         //
         // Obtenemos los elementos de la vista
         //
-        codigo = (EditText) findViewById(R.id.etIdTumba);
-        nombre = (EditText) findViewById(R.id.etNombreTumba);
+        codigo = (EditText) findViewById(R.id.etIdTrabajoCabecera);
+        nombre = (EditText) findViewById(R.id.etDescripcionTrabajoCabecera);
         cementerio = (EditText) findViewById(R.id.etCementerio);
         campo = (EditText) findViewById(R.id.etCampo);
         fila = (EditText) findViewById(R.id.etFila);

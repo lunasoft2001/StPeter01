@@ -16,7 +16,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
-import at.ums.stpeter01.actividades.ListaTumbas;
+import at.ums.stpeter01.actividades.trabajoCabecera.ListaTrabajoCabecera;
+import at.ums.stpeter01.actividades.tumbas.ListaTumbas;
 import at.ums.stpeter01.sqlite.BDHelper;
 
 public class ActividadPrincipal extends AppCompatActivity
@@ -101,7 +102,9 @@ public class ActividadPrincipal extends AppCompatActivity
             Intent intento = new Intent(this, ListaTumbas.class);
             startActivity(intento);
 
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.trabajoCabecera) {
+            Intent intento = new Intent(this, ListaTrabajoCabecera.class);
+            startActivity(intento);
 
         } else if (id == R.id.nav_slideshow) {
 
