@@ -19,6 +19,7 @@ import android.widget.Toast;
 import at.ums.stpeter01.actividades.trabajoCabecera.ListaTrabajoCabecera;
 import at.ums.stpeter01.actividades.tumbas.ListaTumbas;
 import at.ums.stpeter01.sqlite.BDHelper;
+import at.ums.stpeter01.sqlite.ExternalDbHelper;
 
 public class ActividadPrincipal extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -51,12 +52,24 @@ public class ActividadPrincipal extends AppCompatActivity
 
         /**
          * Declaramos el controlador de la BD y accedemos en modo escritura
+         * Para la base de datos creada desde java
          */
-        BDHelper bdHelper = new BDHelper(getBaseContext());
+//        BDHelper bdHelper = new BDHelper(getBaseContext());
+//
+//        SQLiteDatabase db = bdHelper.getWritableDatabase();
+//
+//        Toast.makeText(getBaseContext(), "Base de datos preparada internamente", Toast.LENGTH_LONG).show();
+
+
+        /**
+         * Declaramos el controlador de la BD y accedemos en modo escritura
+         * Para la base de datos creada desde assets
+         */
+        ExternalDbHelper bdHelper = new ExternalDbHelper(getBaseContext());
 
         SQLiteDatabase db = bdHelper.getWritableDatabase();
 
-        Toast.makeText(getBaseContext(), "Base de datos preparada", Toast.LENGTH_LONG).show();
+        Toast.makeText(getBaseContext(), "Base de datos preparada desde assets", Toast.LENGTH_LONG).show();
 
     }
 

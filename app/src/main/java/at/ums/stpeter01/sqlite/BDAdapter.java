@@ -46,7 +46,7 @@ public class BDAdapter {
      */
 
     private String[] columnasTumbas = new String[]{mTumbasID, mTumbasNombre, mTumbasCementerio,
-                               mTumbasCampo, mTumbasCodigo, mTumbasFila, mTumbasNumero};
+            mTumbasCampo, mTumbasCodigo, mTumbasFila, mTumbasNumero};
 
 
     private String[] columnasTrabajoCabecera = new String[]{mTrCabID, mTrCabDescripcion,
