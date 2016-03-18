@@ -1,8 +1,6 @@
 package at.ums.stpeter01.sqlite;
 
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
-
 import com.readystatesoftware.sqliteasset.SQLiteAssetHelper;
 
 /**

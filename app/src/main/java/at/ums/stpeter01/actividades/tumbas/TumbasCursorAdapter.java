@@ -40,7 +40,8 @@ public class TumbasCursorAdapter extends CursorAdapter{
     @Override
     public View newView(Context context, Cursor cursor, ViewGroup parent) {
         final LayoutInflater inflater = LayoutInflater.from(context);
-        final View view = inflater.inflate(android.R.layout.simple_dropdown_item_1line, parent,false);
+       // final View view = inflater.inflate(android.R.layout.simple_dropdown_item_1line, parent, false);
+        final View view = inflater.inflate(android.R.layout.list_content, parent,false);
         return view;
     }
 }

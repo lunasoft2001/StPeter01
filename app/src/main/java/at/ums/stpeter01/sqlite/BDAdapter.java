@@ -38,7 +38,8 @@ public class BDAdapter {
 
 
     private Context contexto;
-    private BDHelper dbHelper;
+   //  private BDHelper dbHelper; //para la opcion bd interna
+    private ExternalDbHelper dbHelper; //para la opcion bd desde assets
     private SQLiteDatabase db;
 
     /**
@@ -57,7 +58,8 @@ public class BDAdapter {
     }
 
     public BDAdapter abrir() throws SQLException{
-        dbHelper = new BDHelper(contexto);
+        // dbHelper = new BDHelper(contexto); //para la opcion bd interna
+        dbHelper = new ExternalDbHelper(contexto); //para la opcion bd desde assets
         db = dbHelper.getWritableDatabase();
         return this;
     }
